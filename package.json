@@ -1,0 +1,27 @@
+{
+  "name": "drawio2vsdx",
+  "version": "0.4.0",
+  "description": "draw.io (.drawio) -> Visio (.vsdx) converter with native shapes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "convert": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@xmldom/xmldom": "^0.9.12",
+    "jszip": "^3.10.2",
+    "opentype.js": "^2.0.0",
+    "pako": "^3.0.2"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/opentype.js": "^1.3.10",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
