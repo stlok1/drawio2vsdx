@@ -44,6 +44,8 @@ npm link
 drawio2vsdx diagram.drawio -o diagram.vsdx
 ```
 
+The link belongs to the Node.js installation that was active when it was made. With a version manager such as nvm, run `npm link` again after switching Node versions.
+
 ## What gets converted
 
 **Pages**
