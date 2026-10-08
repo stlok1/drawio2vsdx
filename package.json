@@ -2,15 +2,22 @@
   "name": "drawio2vsdx",
   "version": "0.4.0",
   "description": "draw.io (.drawio) -> Visio (.vsdx) converter with native shapes",
-  "main": "index.js",
+  "bin": {
+    "drawio2vsdx": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "convert": "tsx src/cli.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "npm run build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@xmldom/xmldom": "^0.9.12",
     "jszip": "^3.10.2",
